@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>이렇게 '갑질' 한다고? 멘탈 무너트리는 유형 3가지</title>
-  <meta name="description" content="배송 현장에서 기사님들을 힘들게 만드는 낮은 단가, 일방적 퇴사 요구, 임금 체불과 정산 지연 등 갑질 유형과 대응 기준을 정리한 콘텐츠입니다.">
+  <meta name="description" content="배송 현장에서 기사님들을 힘들게 만드는 낮은 단가, 일방적 퇴사 요구, 정산 지연 등 갑질 유형과, 이를 막아주는 구조 안에서 실제로 어떻게 오래 버는지를 정리한 콘텐츠입니다.">
 
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-GM7XGZ6SSD"></script>
@@ -42,6 +42,9 @@
       --danger-bg: #fff5f3;
       --danger-line: #f0c7bd;
       --danger-ink: #8b3428;
+      --money-bg: #f1faf4;
+      --money-line: #bfe6cd;
+      --money-ink: #1f6b40;
       --shadow-soft: 0 18px 52px rgba(31, 51, 66, 0.08);
       --shadow-card: 0 10px 30px rgba(31, 51, 66, 0.06);
       box-sizing: border-box;
@@ -109,29 +112,6 @@
 
     .wa-figure {
       margin: 34px 0 34px;
-    }
-
-    .wa-image-slot {
-      display: flex;
-      min-height: 260px;
-      align-items: center;
-      justify-content: center;
-      padding: 28px;
-      border: 1px dashed #b9c9d1;
-      border-radius: 18px;
-      background: linear-gradient(180deg, #fbf7eb 0%, #fffdf8 100%);
-      color: var(--muted);
-      text-align: center;
-      font-size: 15px;
-      line-height: 1.75;
-      box-shadow: var(--shadow-card);
-    }
-
-    .wa-image-slot strong {
-      display: block;
-      margin-bottom: 8px;
-      color: var(--ink);
-      font-size: 17px;
     }
 
     .wa-figure img {
@@ -224,14 +204,6 @@
       letter-spacing: 0;
     }
 
-    .wa-section h3 {
-      margin: 34px 0 12px;
-      color: var(--ink);
-      font-size: 20px;
-      line-height: 1.46;
-      font-weight: 740;
-    }
-
     .water-article p {
       margin: 0 0 24px;
       font-size: 17px;
@@ -270,6 +242,29 @@
       margin-bottom: 0;
     }
 
+    .wa-money {
+      margin: 34px 0;
+      padding: 28px 26px;
+      border: 1px solid var(--money-line);
+      border-radius: 20px;
+      background: var(--money-bg);
+      color: var(--money-ink);
+      box-shadow: 0 10px 30px rgba(31, 107, 64, 0.06);
+    }
+
+    .wa-money p {
+      margin-bottom: 16px;
+      color: #24503a;
+    }
+
+    .wa-money p:last-child {
+      margin-bottom: 0;
+    }
+
+    .wa-money strong {
+      color: var(--money-ink);
+    }
+
     .wa-compare {
       display: grid;
       grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -294,23 +289,6 @@
       margin: 0;
       font-size: 16px;
       line-height: 1.78;
-    }
-
-    .wa-check {
-      margin: 34px 0;
-      padding: 26px 26px;
-      border: 1px solid var(--line);
-      border-radius: 20px;
-      background: #fff;
-      box-shadow: var(--shadow-card);
-    }
-
-    .wa-check ul {
-      margin: 0;
-      padding-left: 20px;
-      color: var(--text);
-      font-size: 16px;
-      line-height: 1.85;
     }
 
     .wa-video {
@@ -398,11 +376,6 @@
         font-size: 16px;
       }
 
-      .wa-image-slot {
-        min-height: 210px;
-        padding: 22px 18px;
-      }
-
       .wa-toc {
         padding: 24px 22px 26px;
         border-radius: 20px;
@@ -442,18 +415,19 @@
       <p class="wa-subtitle">"어제까지 잘 일하고 있었는데, 갑자기 계약이 끝났으니 나가라고 한다면?"</p>
 
       <div class="wa-lead">
-        배송 현장에서 기사님들을 가장 힘들게 만드는 것은 몸이 힘든 노동만이 아닙니다. 예상치 못한 순간에 찾아오는 센터, 원청사, 정산 관계에서의 억울하고 불합리한 갑질입니다.
+        배송 현장에서 기사님들을 가장 힘들게 만드는 것은 몸이 힘든 노동만이 아닙니다. 예상치 못한 순간에 찾아오는 갑질입니다. 그래서 오늘은 그 갑질 유형과, 이를 막아주는 구조 안에서 실제로 어떻게 오래 버는지를 함께 봅니다.
       </div>
     </section>
 
     <nav class="wa-toc" aria-label="목차">
       <h2>이 글에서 확인할 내용</h2>
       <ol>
-        <li>배송 기사 멘탈을 무너뜨리는 갑질 유형</li>
+        <li>배송 기사 멘탈을 무너뜨리는 갑질 유형 3가지</li>
         <li>낮은 단가 문제가 만드는 실제 손실</li>
         <li>원청사 변경과 일방적 퇴사 요구</li>
         <li>임금 체불 및 정산 지연 리스크</li>
         <li>배송인그룹이 제공하는 방어 장치</li>
+        <li>지켜주는 구조 안에서 실제로 오래 버는 사람들</li>
       </ol>
     </nav>
 
@@ -503,32 +477,32 @@
 
       <p>보통 쿠팡 생수 배송의 정상적인 시장 단가는 팩당 900원 선으로 책정되어 있습니다. 하지만 일부 악덕 업체들은 초보자의 무지를 이용해 이를 팩당 600~700원으로 은밀하게 깎아서 계약을 맺습니다.</p>
 
-      <p>숫자로 보면 고작 200원 차이 같지만, 기사님이 한 달에 9,000팩을 성실하게 배송한다고 가정해 보면 매출의 단위가 달라집니다.</p>
+      <p>숫자로 보면 고작 200원 차이 같지만, 기사님이 한 달에 9,000팩을 배송한다고 가정해 보면 매출의 단위가 달라집니다.</p>
 
       <div class="wa-compare">
         <article class="wa-compare-card">
           <h3>정상 단가 적용</h3>
-          <p>팩당 900원 적용 시 월 매출은 약 810만 원입니다.</p>
+          <p>팩당 900원 적용 시 월 매출은 약 810만 원 수준입니다.</p>
         </article>
 
         <article class="wa-compare-card">
           <h3>후려친 단가 적용</h3>
-          <p>팩당 700원 적용 시 월 매출은 약 630만 원입니다.</p>
+          <p>팩당 700원 적용 시 월 매출은 약 630만 원 수준입니다.</p>
         </article>
 
         <article class="wa-compare-card">
           <h3>월 손실</h3>
-          <p>매달 무려 180만 원, 1년이면 2,000만 원이 넘는 돈이 사라지는 셈입니다.</p>
+          <p>매달 약 180만 원, 1년이면 2,000만 원이 넘는 차이가 벌어지는 셈입니다.</p>
         </article>
       </div>
 
-      <div class="wa-warning">
-        <p>뒤늦게 이 사실을 깨닫고 억울해서 대리점에 항의해도, 이미 독소 조항이 담긴 계약서에 서명했다는 이유로 아무런 보상을 받지 못하는 경우가 허다합니다.</p>
+      <div class="wa-note">
+        여기서 말하는 금액은 물량을 가정한 <strong>매출</strong> 예시이며, 실제 실수령은 유류비·차량 유지비 등에 따라 달라집니다. 핵심은 금액 자체가 아니라, <strong>단가를 어떻게 계약하느냐에 따라 결과가 이만큼 갈린다</strong>는 점입니다.
       </div>
 
       <figure class="wa-figure">
         <img src="https://i.ibb.co/TBPJdW1r/Chat-GPT-Image-2026-6-24-05-49-33.png" alt="생수배송 단가 차이에 따른 월 매출 비교">
-        <figcaption class="wa-caption">생수배송 단가 차이에 따른 월 매출 비교 이미지</figcaption>
+        <figcaption class="wa-caption">생수배송 단가 차이에 따른 월 매출 비교 이미지 (조건에 따라 다를 수 있습니다)</figcaption>
       </figure>
     </section>
 
@@ -590,13 +564,20 @@
     </section>
 
     <section class="wa-section">
-      <p class="wa-kicker">Review</p>
-      <h2>현장 문제 대응 관련 영상</h2>
+      <p class="wa-kicker">Reality</p>
+      <h2>지켜주는 구조 안에서는, 이렇게 오래 법니다</h2>
+
+      <p>갑질을 막아준다는 건 결국 <strong>한번 시작하면 흔들리지 않고 오래 일할 수 있다</strong>는 뜻입니다. 그 안정된 구조 안에서 기사님들이 실제로 어떤 이야기를 하는지 들어보세요.</p>
+
+      <div class="wa-money">
+        <p>직장 생활을 하다 옮겨온 권준혁 님은 인터뷰에서 <strong>"내 월급 이거 맞아? 직장인 월급의 2배가 됐고, 업무 만족도가 가장 높다"</strong>고 이야기합니다. 4년차 최지훈 님은 월급·출퇴근·장단점을 가감 없이 솔직하게 공유합니다.</p>
+        <p>실제 인터뷰에서 언급되는 순수입은 <strong>월 700만 원대</strong>가 많고, 연차와 지역에 따라 그 이상인 사례도 있습니다. 다만 이 금액은 <strong>배정 지역의 물량, 근무 강도, 개인의 숙련도에 따라 크게 달라집니다.</strong> 사람마다 지역마다 다른 결과라는 점을 함께 기억해 주세요.</p>
+      </div>
 
       <div class="wa-video">
         <iframe
-          src="https://www.youtube-nocookie.com/embed/0pR7nz6tC6w?rel=0&origin=https://jeongbohan.github.io"
-          title="낮은 단가 문제 관련 영상"
+          src="https://www.youtube-nocookie.com/embed/2s2CZozTXek?rel=0&origin=https://jeongbohan.github.io"
+          title="권준혁 님 - 쿠팡워터플렉스 후기, 직장인 월급 2배 업무 만족도 최상"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           referrerpolicy="strict-origin-when-cross-origin"
           allowfullscreen></iframe>
@@ -604,28 +585,31 @@
 
       <div class="wa-video">
         <iframe
-          src="https://www.youtube-nocookie.com/embed/pvU9y3OPi4E?rel=0&origin=https://jeongbohan.github.io"
-          title="원청사 변경 및 센터 대응 관련 영상"
+          src="https://www.youtube-nocookie.com/embed/YovCG6oUPew?rel=0&origin=https://jeongbohan.github.io"
+          title="최지훈 님 - 4년차 배송기사가 알려주는 월급·출퇴근·장단점"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           referrerpolicy="strict-origin-when-cross-origin"
           allowfullscreen></iframe>
       </div>
+
+      <figure class="wa-figure">
+        <img src="https://i.ibb.co/nMK7t4x0/04.png" alt="쿠팡생수배송 실제 수수료 정산 증빙">
+        <figcaption class="wa-caption">투명한 정산 구조에서는 단가와 실지급이 그대로 공개됩니다 (조건에 따라 다를 수 있습니다)</figcaption>
+      </figure>
     </section>
 
     <section class="wa-section">
       <p class="wa-kicker">Final Check</p>
       <h2>누구와 함께 시작하느냐가 내 미래를 결정합니다</h2>
 
-      <p>배송업은 땀 흘린 만큼 정직하게 버는 최고의 현실적 대안이지만, 문제가 터졌을 때 나를 지켜줄 거대한 뒷배가 없다면 언제든 갑질의 피해자가 될 수 있습니다.</p>
+      <p>배송업은 땀 흘린 만큼 정직하게 버는 현실적인 대안이지만, 문제가 터졌을 때 나를 지켜줄 뒷배가 없다면 언제든 갑질의 피해자가 될 수 있습니다.</p>
 
       <p>배송인그룹은 단순한 일자리 알선업체가 아닙니다. 기사님이 현장에서 겪을 수 있는 계약, 정산, 노무 분쟁의 모든 영역에서 대기업과 원청사를 상대로 기사님의 권리를 대변해 주는 든든한 연대이자 방패입니다.</p>
 
-      <p>지금 계약하려는 조건이, 혹은 내가 일하려는 센터의 환경이 정말 안전하고 롱런할 수 있는 구조인지 배송인그룹의 전문가들과 함께 꼼꼼하게 확인해 보세요.</p>
-
       <div class="wa-cta">
-        <h2>배송 현장 문제 대응 기준을 먼저 확인해보세요</h2>
-        <p>계약, 정산, 센터 변경 같은 문제가 생겼을 때 나를 지켜줄 구조가 있는지 확인하는 것이 안전한 시작입니다.</p>
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLSc3Hhqjkn2PygJDrNfb8aLhmA7L3BtNW6xH-W4Nb1MKo2OJdQ/viewform?usp=pp_url&entry.1405137319=water_04" target="_blank" rel="noopener">배송 현장 문제 대응 기준 확인하기</a>
+        <h2>내 지역·내 조건이 안전하게 오래 일할 수 있는 구조인지 확인해보세요</h2>
+        <p>거주 지역과 관심 있는 배송 업무만 알려주시면, 계약·정산·센터 문제가 생겼을 때 나를 지켜줄 구조가 갖춰진 조건인지 함께 확인해 드립니다.</p>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSc3Hhqjkn2PygJDrNfb8aLhmA7L3BtNW6xH-W4Nb1MKo2OJdQ/viewform?usp=pp_url&entry.1405137319=water_04" target="_blank" rel="noopener">내 조건에서 안전하게 시작 가능한지 확인하기</a>
       </div>
     </section>
   </main>
